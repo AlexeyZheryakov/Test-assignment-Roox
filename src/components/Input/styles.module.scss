@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 8px;
+  line-height: 9px;
+  margin-bottom: 3px;
+}
+
+.input {
+  padding: 5px 10px;
+  margin-bottom: 16px;
+  width: 211px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+}
+
+.disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.error {
+  border: 1px solid #D91313
+}

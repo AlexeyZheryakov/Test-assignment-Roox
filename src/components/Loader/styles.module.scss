@@ -1,0 +1,14 @@
+$size: 72px;
+
+.loader {
+  background: url('../../images/preloader.png') no-repeat;
+  width: $size;
+  height: $size;
+  animation: loader 1.3s linear infinite;
+}
+
+@keyframes loader {
+  100% {
+    transform: rotate(360deg);
+  }
+}

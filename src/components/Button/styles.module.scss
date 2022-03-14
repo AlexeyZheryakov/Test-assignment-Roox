@@ -1,0 +1,18 @@
+.btn {
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: #4B51EF;
+  border: none;
+  font-size: 12px;
+  line-height: 14px;
+
+  &_disabled {
+    background-color: #AFAFAF;
+    cursor: not-allowed;
+  }
+
+  &_secondary {
+    background-color: #52CF4F;
+  }
+}
