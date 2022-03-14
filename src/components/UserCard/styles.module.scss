@@ -1,0 +1,23 @@
+.container {
+  width: 420px;
+  height: 73px;
+  background-color: #F3F3F3;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 10px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link {
+  align-self: flex-end;
+  color:#4B51EF;
+  font-size: 12px;
+  line-height: 14px;
+}
