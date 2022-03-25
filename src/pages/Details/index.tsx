@@ -5,7 +5,7 @@ import Form from '../../components/Form';
 import { setInitialValues } from '../../components/Form/config';
 import WithLoader from '../../components/WithLoader';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
-import { getUser } from '../../store/Users/thunks';
+import { getUserById } from '../../store/actions/user';
 
 import styles from './styles.module.scss';
 
@@ -23,7 +23,7 @@ const Details = () => {
 
   useEffect(() => {
     if (id) {
-      dispatch(getUser(id));
+      dispatch(getUserById(id));
     }
   }, [dispatch, id]);
 

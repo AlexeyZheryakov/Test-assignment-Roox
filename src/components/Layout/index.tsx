@@ -2,8 +2,7 @@ import React, { FC } from 'react';
 import styles from './styles.module.scss';
 import MyButton from '../Button';
 import { useAppDispatch } from '../../hooks/redux';
-import { sortUsers } from '../../store/Users/slice';
-import { Filters } from '../../store/Users/types';
+import { usersFilterByCity, usersFilterByCompany } from '../../store/actions/user';
 
 const Layout: FC = ({ children }) => {
   const {
@@ -17,11 +16,11 @@ const Layout: FC = ({ children }) => {
   const dispatch = useAppDispatch();
 
   const handleButtonSortCity = () => {
-    dispatch(sortUsers(Filters.city));
+    dispatch(usersFilterByCity());
   };
 
   const handleButtonSortCompany = () => {
-    dispatch(sortUsers(Filters.company));
+    dispatch(usersFilterByCompany());
   };
 
   return (

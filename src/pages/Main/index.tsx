@@ -3,7 +3,7 @@ import UserCard from '../../components/UserCard';
 import { getOptions } from '../../components/UserCard/utils';
 import WithLoader from '../../components/WithLoader';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
-import { getUsers } from '../../store/Users/thunks';
+import { getUsers } from '../../store/actions/user';
 import styles from './styles.module.scss';
 
 const Main = () => {
